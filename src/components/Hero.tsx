@@ -95,26 +95,6 @@ export default function Hero() {
           </AnimatePresence>
         </div>
 
-        {/* Center: Clean 1:1 Square Wi-Fi Router Visual Badge (DESKTOP ONLY) */}
-        <div className="hidden md:flex relative w-[280px] sm:w-[340px] lg:w-[380px] aspect-square shrink-0 my-auto items-center justify-center z-10 px-4">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentSlideIndex}
-              initial={{ opacity: 0, scale: 0.9, rotate: -1 }}
-              animate={{ opacity: 1, scale: 1, rotate: 0 }}
-              exit={{ opacity: 0, scale: 1.05, rotate: 1 }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
-              className="w-full h-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 bg-black/10 backdrop-blur-xs"
-            >
-              <img
-                src={currentSlide?.img || "/images/wifi_router_3d.jpg"}
-                alt="Mamun Wifi Router Visual Badge"
-                className="w-full h-full object-cover rounded-2xl transform hover:scale-105 transition-transform duration-700"
-              />
-            </motion.div>
-          </AnimatePresence>
-        </div>
-
         {/* Right Side: Compressed Typography (Bottom-Right on Mobile, Right on Desktop) */}
         <div className="flex-1 text-right flex justify-end self-end md:self-auto mt-auto md:mt-0">
           <AnimatePresence mode="wait">
@@ -134,6 +114,9 @@ export default function Hero() {
         </div>
 
       </div>
+
+      {/* Blue Bottom Transition Bar (DESKTOP ONLY) */}
+      <div className="hidden md:block absolute bottom-0 left-0 right-0 h-6 bg-[#1d4ed8] z-30 pointer-events-none" />
     </section>
   );
 }
