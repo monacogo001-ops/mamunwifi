@@ -114,9 +114,6 @@ export default function Hero() {
         </div>
 
       </div>
-
-      {/* Blue Bottom Transition Bar (DESKTOP ONLY) */}
-      <div className="hidden md:block absolute bottom-0 left-0 right-0 h-6 bg-[#1d4ed8] z-30 pointer-events-none" />
     </section>
   );
 }

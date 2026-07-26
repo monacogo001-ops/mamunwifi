@@ -68,30 +68,32 @@ export default function About() {
           {/* VFX Styled Bengali Paragraph */}
           <p className="text-base md:text-lg lg:text-xl mb-10 leading-relaxed max-w-3xl text-blue-100 font-medium">
             আপনার বাসা, অফিস ও প্রতিষ্ঠানের জন্য আমরা প্রদান করছি সর্বোচ্চ গতির{" "}
-            <span className="text-white font-bold bg-white/20 px-5 py-1.5 rounded-full border border-white/30 shadow-[0_0_15px_rgba(255,255,255,0.3)] inline-block my-1">
+            <span className="text-white font-bold bg-white/20 px-4 py-1 rounded-full border border-white/30 shadow-[0_0_15px_rgba(255,255,255,0.3)] inline-flex items-center whitespace-nowrap text-xs md:text-sm my-1">
               অপটিক্যাল ফাইবার ইন্টারনেট
             </span>
             , বাফারলেস ৪কে স্ট্রিমিং, ফাস্ট আল্ট্রা-লো ল্যাটেন্সি গেমিং এবং{" "}
-            <span className="text-cyan-200 font-bold bg-cyan-400/20 px-5 py-1.5 rounded-full border border-cyan-300/40 shadow-[0_0_15px_rgba(6,182,212,0.4)] inline-block my-1">
+            <span className="text-cyan-200 font-bold bg-cyan-400/20 px-4 py-1 rounded-full border border-cyan-300/40 shadow-[0_0_15px_rgba(6,182,212,0.4)] inline-flex items-center whitespace-nowrap text-xs md:text-sm my-1">
               ২৪/৭ রিয়েল-টাইম সাপোর্ট
             </span>
             ।
           </p>
 
-          {/* 3 High-Tech Capsule Network Feature Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-8">
+          {/* 3 High-Tech Sleek Compact Capsule Feature Cards (1-Line Chikon Capsules) */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="bg-white/10 backdrop-blur-xl border border-white/20 hover:border-cyan-400/60 p-6 rounded-full flex flex-col items-center text-center group hover:bg-white/15 transition-all duration-300 shadow-[0_0_25px_rgba(0,0,0,0.2)] hover:shadow-[0_0_30px_rgba(6,182,212,0.4)] cursor-pointer"
+              className="bg-white/10 backdrop-blur-xl border border-white/20 hover:border-cyan-400/60 px-5 py-3 rounded-full flex flex-row items-center justify-center gap-3 text-left group hover:bg-white/15 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.15)] hover:shadow-[0_0_25px_rgba(6,182,212,0.4)] cursor-pointer"
             >
-              <div className="w-14 h-14 rounded-full bg-cyan-500/20 border border-cyan-400/40 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(6,182,212,0.5)]">
-                <Wifi className="w-7 h-7 text-cyan-300" />
+              <div className="w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-400/40 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(6,182,212,0.5)]">
+                <Wifi className="w-5 h-5 text-cyan-300" />
               </div>
-              <h4 className="text-sm font-bold text-white mb-0.5">গিগাবিট ফাইবার</h4>
-              <span className="text-[11px] text-cyan-200/80 font-mono">Ultra-Fast Speed</span>
+              <div className="flex flex-col">
+                <h4 className="text-xs md:text-sm font-bold text-white leading-tight">গিগাবিট ফাইবার</h4>
+                <span className="text-[10px] text-cyan-200/80 font-mono">Ultra-Fast Speed</span>
+              </div>
             </motion.div>
 
             <motion.div
@@ -99,13 +101,15 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.45 }}
-              className="bg-white/10 backdrop-blur-xl border border-white/20 hover:border-blue-400/60 p-6 rounded-full flex flex-col items-center text-center group hover:bg-white/15 transition-all duration-300 shadow-[0_0_25px_rgba(0,0,0,0.2)] hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] cursor-pointer"
+              className="bg-white/10 backdrop-blur-xl border border-white/20 hover:border-blue-400/60 px-5 py-3 rounded-full flex flex-row items-center justify-center gap-3 text-left group hover:bg-white/15 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.15)] hover:shadow-[0_0_25px_rgba(37,99,235,0.4)] cursor-pointer"
             >
-              <div className="w-14 h-14 rounded-full bg-blue-500/20 border border-blue-400/40 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(37,99,235,0.5)]">
-                <Zap className="w-7 h-7 text-blue-300" />
+              <div className="w-10 h-10 rounded-full bg-blue-500/20 border border-blue-400/40 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(37,99,235,0.5)]">
+                <Zap className="w-5 h-5 text-blue-300" />
               </div>
-              <h4 className="text-sm font-bold text-white mb-0.5">বিডিআইএক্সে ফুল স্পিড</h4>
-              <span className="text-[11px] text-blue-200/80 font-mono">Low Ping Gaming</span>
+              <div className="flex flex-col">
+                <h4 className="text-xs md:text-sm font-bold text-white leading-tight">বিডিআইএক্সে ফুল স্পিড</h4>
+                <span className="text-[10px] text-blue-200/80 font-mono">Low Ping Gaming</span>
+              </div>
             </motion.div>
 
             <motion.div
@@ -113,13 +117,15 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="bg-white/10 backdrop-blur-xl border border-white/20 hover:border-emerald-400/60 p-6 rounded-full flex flex-col items-center text-center group hover:bg-white/15 transition-all duration-300 shadow-[0_0_25px_rgba(0,0,0,0.2)] hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] cursor-pointer"
+              className="bg-white/10 backdrop-blur-xl border border-white/20 hover:border-emerald-400/60 px-5 py-3 rounded-full flex flex-row items-center justify-center gap-3 text-left group hover:bg-white/15 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.15)] hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] cursor-pointer"
             >
-              <div className="w-14 h-14 rounded-full bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(16,185,129,0.5)]">
-                <ShieldCheck className="w-7 h-7 text-emerald-300" />
+              <div className="w-10 h-10 rounded-full bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(16,185,129,0.5)]">
+                <ShieldCheck className="w-5 h-5 text-emerald-300" />
               </div>
-              <h4 className="text-sm font-bold text-white mb-0.5">২৪/৭ সাপোর্টিং</h4>
-              <span className="text-[11px] text-emerald-200/80 font-mono">99.9% Uptime</span>
+              <div className="flex flex-col">
+                <h4 className="text-xs md:text-sm font-bold text-white leading-tight">২৪/৭ সাপোর্টিং</h4>
+                <span className="text-[10px] text-emerald-200/80 font-mono">99.9% Uptime</span>
+              </div>
             </motion.div>
           </div>
         </motion.div>
