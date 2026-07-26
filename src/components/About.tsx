@@ -36,11 +36,11 @@ export default function About() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative flex flex-col items-center justify-center group"
           >
-            <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-3xl overflow-hidden shadow-[0_0_60px_rgba(6,182,212,0.5)] border border-cyan-400/40 p-2 bg-gradient-to-b from-cyan-500/20 via-blue-600/10 to-transparent backdrop-blur-md">
+            <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(6,182,212,0.4)]">
               <img
                 src="/images/mamun_wifi_logo.jpg"
                 alt="Mamun Wifi Logo"
-                className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover rounded-3xl group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </motion.div>
