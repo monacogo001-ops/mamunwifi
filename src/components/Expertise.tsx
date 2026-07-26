@@ -207,30 +207,22 @@ export default function Expertise() {
           </motion.p>
         </div>
 
-        {/* Mobile Animated Scroll-Fill Line */}
-        <div className="block xl:hidden absolute top-32 left-6 sm:left-10 bottom-12 w-1 bg-blue-100 rounded-full z-0 pointer-events-none">
-          <motion.div
-            style={{ scaleY: pathLength }}
-            className="w-full h-full bg-[#2563eb] rounded-full origin-top shadow-[0_0_10px_rgba(37,99,235,0.8)]"
-          />
-        </div>
-
-        {/* Desktop S-Curve Path with Animated Scroll-Fill */}
+        {/* Desktop S-Curve Path with Scroll Fill Animation */}
         <svg
-          className="hidden xl:block absolute top-0 left-0 w-full h-[1480px] pointer-events-none z-0"
+          className="hidden md:block absolute top-0 left-0 w-full h-[1480px] pointer-events-none z-0"
           viewBox="0 0 1000 1480"
           preserveAspectRatio="none"
         >
           <path
-            d="M 820,100 C 600,280 400,450 350,720 C 300,980 750,950 700,1200 C 650,1350 350,1380 180,1440"
+            d="M 650,200 C 400,320 200,450 300,720 C 400,980 750,950 700,1200 C 650,1350 350,1380 180,1440"
             fill="none"
             stroke="#dbeafe"
-            strokeWidth="3"
-            strokeDasharray="8 8"
+            strokeWidth="2"
+            strokeDasharray="8 10"
           />
           <mask id="path-mask">
             <motion.path
-              d="M 820,100 C 600,280 400,450 350,720 C 300,980 750,950 700,1200 C 650,1350 350,1380 180,1440"
+              d="M 650,200 C 400,320 200,450 300,720 C 400,980 750,950 700,1200 C 650,1350 350,1380 180,1440"
               fill="none"
               stroke="white"
               strokeWidth="20"
@@ -238,10 +230,11 @@ export default function Expertise() {
             />
           </mask>
           <path
-            d="M 820,100 C 600,280 400,450 350,720 C 300,980 750,950 700,1200 C 650,1350 350,1380 180,1440"
+            d="M 650,200 C 400,320 200,450 300,720 C 400,980 750,950 700,1200 C 650,1350 350,1380 180,1440"
             fill="none"
             stroke="#2563eb"
-            strokeWidth="4"
+            strokeWidth="2.5"
+            strokeDasharray="8 10"
             mask="url(#path-mask)"
             className="drop-shadow-sm"
           />

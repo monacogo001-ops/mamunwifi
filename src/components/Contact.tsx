@@ -99,7 +99,7 @@ export default function Contact() {
     <section
       ref={containerRef}
       id="contact"
-      className="bg-[#0a0a0a] w-full relative overflow-hidden flex flex-col justify-center items-center pt-12 md:pt-24 pb-12 font-sans border-t border-gray-900"
+      className="bg-[#0a0a0a] w-full min-h-screen relative overflow-hidden flex items-end pt-32 pb-0 md:pb-0 border-t border-gray-900 font-sans"
     >
       {/* Huge Parallax CONTACT Watermark */}
       <motion.div
@@ -111,16 +111,16 @@ export default function Contact() {
         </h1>
       </motion.div>
 
-      {/* Centered Deep Blue Contact Container */}
-      <div className="relative z-10 w-full flex justify-center items-center px-4 md:px-8 pb-12">
+      {/* Slide-Up Deep Blue Contact Container */}
+      <div className="relative z-10 w-full flex justify-end items-end">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="bg-[#2563eb] w-full max-w-7xl mx-auto p-6 sm:p-8 md:p-12 text-white flex flex-col justify-between shadow-2xl rounded-3xl"
+          className="bg-[#2563eb] w-full md:w-[85%] lg:w-[80%] p-8 md:p-14 text-white flex flex-col justify-between shadow-2xl rounded-none"
         >
-          <div className="text-xs font-mono tracking-[0.2em] mb-8 uppercase opacity-90 font-bold">
+          <div className="text-xs font-mono tracking-[0.2em] mb-8 uppercase opacity-90">
             Reach Us
           </div>
 

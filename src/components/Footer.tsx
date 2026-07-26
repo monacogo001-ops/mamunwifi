@@ -21,32 +21,22 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#121212] text-white pt-12 pb-6 px-6 md:px-12 relative overflow-hidden font-['Google_Sans',sans-serif] border-t border-white/10">
       
-      {/* Top Footer Bar (Contact Info & Copyright) */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8 relative z-10 border-b border-white/10 pb-8">
+      {/* Top Footer Bar (Copyright & Quick Links) */}
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12 relative z-10 border-b border-white/10 pb-8">
         
         {/* Left: Copyright */}
         <div className="flex items-center gap-4 text-xs md:text-sm text-gray-300 font-medium">
           <span>© mamunwifi 2026</span>
-          <span className="text-gray-600">•</span>
-          <span className="text-blue-400">All Rights Reserved</span>
         </div>
 
-        {/* Center/Right: Full Contact Info for Mobile & Android */}
-        <div className="flex flex-wrap items-center gap-4 md:gap-8 text-xs md:text-sm text-gray-300 font-medium font-['Hind_Siliguri','Google_Sans',sans-serif]">
-          <div className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
-            <span className="text-yellow-400 font-bold">📞 Hotline:</span>
-            <span>০১৭৭৯২৮৮৫৫৫ / ০১৫৮১০২৭৯৭২</span>
-          </div>
-          <div className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
-            <span className="text-cyan-400 font-bold">✉ Email:</span>
-            <a href={`mailto:${email}`} className="hover:text-white transition-colors">
-              {email}
-            </a>
-          </div>
-          <div className="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
-            <span className="text-emerald-400 font-bold">📍 Office:</span>
-            <span>পশ্চিম সরমঙ্গল, বাংলাদেশ</span>
-          </div>
+        {/* Right: Contact Email */}
+        <div className="flex items-center gap-6 text-xs md:text-sm text-gray-400 font-medium">
+          <a
+            href={`mailto:${email}`}
+            className="hover:text-white transition-colors"
+          >
+            {email}
+          </a>
         </div>
       </div>
 
