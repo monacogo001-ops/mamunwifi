@@ -207,14 +207,14 @@ export default function Expertise() {
           </motion.p>
         </div>
 
-        {/* Desktop S-Curve Path */}
+        {/* Desktop S-Curve Path (Hidden on Mobile & Tablet to Prevent Text Overlap) */}
         <svg
-          className="hidden md:block absolute top-0 left-0 w-full h-[1480px] pointer-events-none z-0"
+          className="hidden xl:block absolute top-0 left-0 w-full h-[1480px] pointer-events-none z-0"
           viewBox="0 0 1000 1480"
           preserveAspectRatio="none"
         >
           <path
-            d="M 650,200 C 400,320 200,450 300,720 C 400,980 750,950 700,1200 C 650,1350 350,1380 180,1440"
+            d="M 820,100 C 600,280 400,450 350,720 C 300,980 750,950 700,1200 C 650,1350 350,1380 180,1440"
             fill="none"
             stroke="#dbeafe"
             strokeWidth="2"
@@ -222,7 +222,7 @@ export default function Expertise() {
           />
           <mask id="path-mask">
             <motion.path
-              d="M 650,200 C 400,320 200,450 300,720 C 400,980 750,950 700,1200 C 650,1350 350,1380 180,1440"
+              d="M 820,100 C 600,280 400,450 350,720 C 300,980 750,950 700,1200 C 650,1350 350,1380 180,1440"
               fill="none"
               stroke="white"
               strokeWidth="20"

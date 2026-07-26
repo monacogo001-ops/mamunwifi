@@ -104,23 +104,23 @@ export default function Contact() {
       {/* Huge Parallax CONTACT Watermark */}
       <motion.div
         style={{ y: watermarkY }}
-        className="absolute top-0 left-0 w-full h-full flex flex-col justify-start items-center overflow-hidden pointer-events-none z-0 pt-16 md:pt-12"
+        className="absolute top-0 left-0 w-full h-full flex flex-col justify-start items-center overflow-hidden pointer-events-none z-0 pt-20 md:pt-16"
       >
-        <h1 className="text-[15vw] md:text-[12vw] leading-[0.8] text-white/15 uppercase tracking-tighter select-none origin-top font-black">
+        <h1 className="text-[14vw] md:text-[10vw] leading-[0.8] text-white/5 uppercase tracking-tighter select-none origin-top font-black">
           Contact
         </h1>
       </motion.div>
 
-      {/* Slide-Up Deep Blue Contact Container */}
-      <div className="relative z-10 w-full flex justify-end items-end">
+      {/* Centered Deep Blue Contact Container */}
+      <div className="relative z-10 w-full flex justify-center items-center px-4 md:px-8 pb-12">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="bg-[#2563eb] w-full md:w-[85%] lg:w-[80%] p-8 md:p-14 text-white flex flex-col justify-between shadow-2xl rounded-none"
+          className="bg-[#2563eb] w-full max-w-7xl mx-auto p-6 sm:p-8 md:p-12 text-white flex flex-col justify-between shadow-2xl rounded-3xl"
         >
-          <div className="text-xs font-mono tracking-[0.2em] mb-8 uppercase opacity-90">
+          <div className="text-xs font-mono tracking-[0.2em] mb-8 uppercase opacity-90 font-bold">
             Reach Us
           </div>
 

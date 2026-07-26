@@ -87,7 +87,7 @@ export default function Hero() {
               <span className="font-mono text-xs md:text-sm tracking-[0.2em] text-gray-800 block mb-3 uppercase font-extrabold">
                 [{currentSlide?.tag || "HIGH SPEED BROADBAND"}]
               </span>
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-black tracking-tighter uppercase leading-[0.9] drop-shadow-md">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-black tracking-tighter uppercase leading-[0.9] drop-shadow-md">
                 {(currentSlide?.leftText || "MAMUN WIFI").split(" ")[0]} <br />
                 <span className="text-slate-950">{(currentSlide?.leftText || "MAMUN WIFI").split(" ")[1] || ""}</span>
               </h1>
@@ -106,7 +106,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="max-w-xs md:max-w-sm"
             >
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-black tracking-tighter uppercase leading-[0.95] drop-shadow-md">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-black tracking-tighter uppercase leading-[0.95] drop-shadow-md">
                 {currentSlide?.rightText || "WHERE SPEED MEETS STABILITY"}
               </h2>
             </motion.div>
