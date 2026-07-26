@@ -99,7 +99,7 @@ export default function Contact() {
     <section
       ref={containerRef}
       id="contact"
-      className="bg-[#0a0a0a] w-full min-h-screen relative overflow-hidden flex items-end pt-32 pb-0 md:pb-0 border-t border-gray-900 font-sans"
+      className="bg-[#0a0a0a] w-full relative overflow-hidden flex flex-col justify-center items-center pt-12 md:pt-24 pb-12 font-sans border-t border-gray-900"
     >
       {/* Huge Parallax CONTACT Watermark */}
       <motion.div
